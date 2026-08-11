@@ -1,0 +1,445 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Bona Nova SC", serif;
+
+}
+body {
+    background-color: black;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8%;
+    background: rgba(12, 12, 12, .9);
+    border-bottom: 1px solid rgba(201, 165, 92, .15);
+    box-shadow: opx 1px 5px yellow;
+     position: relative;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+}
+.brand {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+#carlogo {
+    color: #D4AF37;
+    font-size: 25px;
+}
+.brandname {
+    margin-left: 3px;
+    color: #D4AF37;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navlinks {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size: 20px;
+
+
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    transition: 2s;
+}
+
+.link:hover {
+    color: goldenrod;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+    display: none;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    padding: 160px 5%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image:
+        linear-gradient(to right,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.50) 35%,
+            rgba(0, 0, 0, 0.15) 70%,
+            rgba(0, 0, 0, 0.05) 100%),
+        url("./images/car2.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  
+ 
+}
+
+.herotext {
+    flex: 1;
+    animation: FadeIn 2s ease;
+    color: white;
+}
+
+.herotitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.heroH {
+    margin-bottom: 15px;
+    line-height: 70px;
+    font-size: 50px;
+
+}
+
+#headc {
+    line-height: 5px;
+    font-size: 50px;
+    color: #D4AF37;
+}
+
+.heropara {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.herobutton {
+    padding: 15px;
+    background-color: #D4AF37;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.herobutton:hover {
+    background-color: black;
+    transform: scale(1.2);
+}
+
+.products {
+    padding: 50px 8% 60px 8%;
+    text-align: center;
+}
+
+.producthead {
+    color: #D4AF37;
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.producthead2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.producthead3 {
+    color: #D4AF37;
+}
+
+.productpara {
+    color: #D4AF37;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.productcontainer {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(201, 165, 92, .15);
+    width: 490px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+.child {
+    background-color: #D4AF37;
+    padding: 5px 10px;
+    color: black;
+    position: absolute;
+    border: 1px solid black;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+
+.card:hover  {
+    transform: translateY(-30px);
+
+}
+
+.cardimg {
+    width: 100%;
+    height: 350px;
+}
+
+.productname,
+.price,
+.productcontent {
+    margin: 20px 0px;
+    color: white;
+}
+
+.banner {
+    margin: 0px 8% 60px 8%;
+    padding: 0px 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/abtbg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+}
+
+.abouthead {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.abouthead1 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #D4AF37;
+}
+
+.abouthead2 {
+    color: white;
+}
+
+.aboutpara {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.aboutbutton {
+    font-size: 15px;
+    background-color: #D4AF37;
+}
+
+.contact {
+    height: 200px;
+    background-color: black;
+    padding: 0px 8%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #D4AF37;
+}
+
+.contacthead,
+.subhead {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.contactphn,
+.contactmail {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.socialicons {
+    margin-top: 20px;
+}
+
+.iconlink {
+    margin-right: 20px;
+    color: black;
+}
+
+.box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.subinput {
+    width: 250px;
+}
+
+.subbutton {
+    color: black;
+    background-color: #D4AF37;
+    border-radius: 5px;
+
+}
+
+.footer {
+    padding: 3px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*    ANIMATION.    */
+
+@keyframes FadeIn {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+
+
+@media (max-width:768px) {
+    .brand {
+        font-size: 15px;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    #check:checked~.icons #menuicon {
+        display: none;
+
+    }
+
+    #check:checked~.icons #cancelicon {
+        display: flex;
+    }
+
+    #cancelicon {
+        display: none;
+    }
+
+    .navlinks {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0%;
+        display: none;
+        background-color: black;
+        backdrop-filter: blur(25px);
+        cursor: pointer;
+    }
+
+    #check:checked~.navlinks {
+        display: block;
+        height: fit-content;
+    }
+
+    .links {
+        margin: 1.2rem 0px;
+        text-align: center;
+    }
+
+    .link {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid rgba(244, 248, 7, 0.15);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+
+    .herotitle {
+        font-size: 35px;
+    }
+
+    .banner,
+    .contact {
+        height: fit-content;
+    }
+
+}
